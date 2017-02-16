@@ -255,12 +255,13 @@ width: 24px;
     margin-top: 27px;
     margin-bottom: 30px;
     font-size: 21px;
-    color: #42494f;
+    color: #42494f; 
 }
 .cantainer-fluid .middle_container .tools .tool_box .tool_img{
 	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;
+	max-height: 109px !important;
 }
 .cantainer-fluid .middle_container .tools .tool_box .learn_more{
     font-family: Myriad Pro;
@@ -356,7 +357,35 @@ width: 24px;
     padding-left: 4px;
     transform: rotate(227deg);
 }
+.tringle2{
 
+	right: 241px;
+    /* margin-left: -64px; */
+    margin-top: -41px;
+    background-color: #fff;
+    position: absolute;
+    border: solid #8e9295;
+    border-width: 0 1px 1px 0;
+    height: 29px;
+    width: 28px;
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    transform: rotate(227deg);
+}
+.avnet_feedback{
+	display: none;
+}
+.rp_feedback{
+	display: none;
+	    text-align: left;
+    font-family: Myriad Pro;
+    font-size: 16px;
+    color: #42494f;
+        display: table-cell;
+    vertical-align: top;
+}
 .last_container .sign_up{
 	margin-left: auto;
 	margin-right: auto;
