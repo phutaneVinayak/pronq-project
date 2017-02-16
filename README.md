@@ -6,3 +6,5 @@ i recefntly joined your repo
 new line
 changes doen in mypratik branch
 hello vinayak
+hello pratik thakur 
+this is my changes in the files 
