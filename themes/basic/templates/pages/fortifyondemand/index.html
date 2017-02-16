@@ -1,0 +1,133 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -SUB CANTAINER - - - - - - - - - - - - - - - - - - - -  - - - -->
+	<div class="sub-cantainer">
+		<div class="row one">
+			<span class="back">Back</span>
+			<div class="lead">
+				<p> {{entry.banner.banner_title}} </p>
+			</div>
+			<div class="horizontal-row"></div>
+		</div>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - FLOAT BOX  - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<div class="row-fluid">
+			{% for data in entry.banner.row_fluid %}
+				<div class="col-md-6">
+					<div class="classWithPad">
+						<span class="sml-lbl">-------------------{{data.sub_title}}--------------------</span> <br>
+						<span class="lrg-lbl">{{data.title}}</span>
+					</div>
+				</div>
+			{% endfor %}	
+		</div>
+		<!-- {{entry.collaspe_text}} -->
+	<!--  - - - - - - - - - - - - -  - - - - - - - - - - - - - COLLAPSE - - -  -  - - - - - - - - - - - - - - - - - - - -  -->
+		<div class="feature">
+			<span class="display-feature">See All Features</span> <br>
+		 <a class="btn-collapse" role="button" data-toggle="collapse" data-target="#collapseFeature"></a>
+		</div>
+	</div>
+	<section class="collapse" id="collapseFeature">
+		<div class="fortiy-desc">
+				{{entry.collaspe_text}}
+		</div>
+	</section>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - TABLE  - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<div class="packages">
+		<table class="table table-bordered">
+		<!--  - - - - - - - - - - - - - - - - - - - - - - HEAD   - - - - - - - - - - - - - - - - - - - - - -  -->
+				<thead>
+					{% for data in entry.package_table.header_row.header_title %}
+						<td><span>{{data}}</span></td>
+					{% endfor %}
+				</thead>
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - row one - - - - - - -  - - - - - - -  - -->
+				<tr class="demo">
+					<td>
+						<div class="quote">
+							Need a Quate?
+						</div>
+						<div class="box-modal contact-us">
+							Contact-us
+						</div>
+					</td>
+					<td>
+						<div class="price">
+							$399
+						</div>
+						<div class="box-modal ">
+							Select
+						</div>
+					</td>
+					<td>
+						<div class="price">
+							$1,999
+						</div>
+						<div class="box-modal ">
+							Select
+						</div>
+					</td>
+					<td>
+						<div class="price">
+							$3,499
+						</div>
+						<div class="box-modal ">
+							Select
+						</div>
+					</td>
+					<td>
+						<div class="price">
+							$8,099
+						</div>
+						<div class="box-modal ">
+							Select
+						</div>
+					</td>
+				</tr>
+		<!--  - - - - - - - - - - - - - - - - - - - - - - table row  - - - - - - - - - - - - - - - - - - - - -->
+			{% for data in entry.package_table.cantents%}
+				<tr class="rows">
+					<td>
+						<div class="row-header">
+							{{data.data1}}
+						</div>
+					</td>
+					<td>
+						<div class="cell">
+							{{data.data2}}
+							{% if data.low_status  %}
+								<span>&#10004;</span>
+							{% endif %}
+						</div>
+					</td>
+					<td>
+						<div class="cell">
+							{{data.data3}}
+							{% if data.medium_status  %}
+								<span>&#10004;</span>
+							{% endif %}
+						</div>
+					</td>
+					<td>
+						<div class="cell">
+							{{data.data4}}
+							{% if data.high_status  %}
+								<span>&#10004;</span>
+							{% endif %}
+						</div>
+					</td>
+					<td>
+						<div class="cell">
+							{{data.data5}}
+							{% if data.critical_status  %}
+								<span>&#10004;</span>
+							{% endif %}
+						</div>
+					</td>
+				</tr>
+			{% endfor %}
+		</table>
+		<p class="threats-desc"> {{entry.table_note}} </p>
+	</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% set url = entry.url %}
+{% if url == "/fortifyondemand" %}
+	<nav class="navbar-inverse">
+		<div class="navigation">
+			<a class="brand" href=""><img class="logo" src="{{getAssetUrl(entry.header.company_logo)}}"></a>
+			<div class="help_wapper">
+				<div class="help pull-right">
+				<a class="help-modal" href="#"></a>
+			</div>
+			</div>
+			
+		</div>
+	</nav>
+{% endif %}
+{% if url == "/agilemanager" %}
+	<nav class="navbar navbar-inverse">
+		<div class="navigation">
+			<div class="navbar-header">
+				<a class="brand" href=""><img class="logo" src="{{getAssetUrl(entry.header.company_logo)}}"></a>
+			</div>
+			<ul class="nav navbar-nav">
+		      <li ><a href="#"> {{ entry.header.navigation_bar.product }} </a></li>
+		      <li><a href="#"> {{ entry.header.navigation_bar.community }} </a></li>
+		      <li><a href="#"> {{ entry.header.navigation_bar.learns }} </a></li>
+		      <li><a href="#"> {{ entry.header.navigation_bar.blogs }} </a></li>
+		    </ul>
+		    <div class="search_box pull-right">
+		    	<input type="text" class="search_text" name="srch_text" value="" >
+		    	<img class="search_icon" src="{{getAssetUrl(entry.header.navigation_bar.search_icon)}}">
+		    </div>
+			<div class="help pull-right">
+				<a class="help-modal" href="#"></a>
+			</div>
+			<div class="sign_in pull-right">
+				<a class="sign_text"> {{ entry.header.navigation_bar.sign_in }} </a>
+				<img class="profile" src="{{getAssetUrl(entry.header.navigation_bar.user_icon)}}">
+			</div>
+		</div>
+	</nav>
+{% endif %}
+{% if url == "/pronq" %}
+<nav class="navbar navbar-inverse">
+	<div class="navbar-pronq-header">
+		<a class="brand" href=""><img class="logo" src="{{getAssetUrl(entry.header.company_logo)}}"></a>
+	</div>
+	<div class="right_navigation">
+		<div class="sign_in ">
+			<a class="sign_text"> Sign in </a>	
+		</div>
+		<div class="create_account ">
+			Create free account
+		</div>
+	</div>
+</nav>
+{% endif %}

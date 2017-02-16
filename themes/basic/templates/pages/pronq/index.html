@@ -1,0 +1,73 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<!--  - - - - - - - - - - - - - - - -  - - - - - - - - - - - -PAGE CONTENT - - - - - - - - - - - - - - - - - -->
+	<div class="banner">
+		<div class="banner_cantainer">
+			<h1 class="banner_title"> {{entry.banner.title}}  </h1>
+			<img class="emb" src="{{getAssetUrl(entry.banner.banner_img)}}" />
+		</div>
+		<div class="banner_desc">
+			<p class="desc1"> {{entry.banner.banner_desc1}} </p>
+			<p class="desc2"> {{entry.banner.banner_desc2}} </p>
+		</div>
+		<div class="float_div">
+			<a class="collapse" href="#"></a>
+			<i class="arr-down"></i>
+			<div class="float_div_intro">
+				<p class="title"> {{ entry.float_box.title }} </p>
+				<p class="desc"> {{entry.float_box.sub_title}} </p>
+			</div>
+			<div class="pronq_service">
+				{% for data in entry.float_box.services %}
+					<div class="col-md-4">
+						<div class="service_info">
+							<img class="service_icon" src="{{ getAssetUrl(data.service_icon )}}">
+							<p class="service_title"> {{data.title}}  </p>
+							<p class="servie_shotName"> {{data.service_shot_name}} </p>
+							<p class="service_desc_"> {{data.service_desc}} </p>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+<!-- - -  - - - - - - - - - - - - - - - - - - -  - - - - - -MIDDLE CONTANER - - - - - - - - - - - - - - - - - - -->
+	<div class="middle_container">
+		<p class="container_title"> {{entry.middle_container.title }} </p>
+		<p class="container_sub_title"> {{entry.middle_container.sub_title}} </p>
+		<div class="tools">
+		{% for data in entry.middle_container.tools %}
+			<div class="tool_box">
+				<div class="tool_wrapper">
+					<p class="tool_title"> {{ data.title }} </p>
+					<img class="tool_img" src="{{getAssetUrl(data.tool_img)}}" />
+					<p class="learn_more"> {{ data.sub_title }} </p>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+		<div class="link_partner_with_us"> {{ entry.middle_container.link_partner_with_us }} </div>
+	</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - LAST CONTINER  - - - - - - - - - - - - - - - - -  -->
+	<div class="last_container">
+		<p class="last_container_title"> {{ entry.last_container.title }} </p>
+		<p class="last_container_sub_title"> {{ entry.last_container.sub_title }} </p>
+		<p class="last_container_desc"> {{ entry.last_container.desc }} </p>
+		<div class="partner_review">
+			{% for data in entry.last_container.partner_log %}
+				<img class="avnet" id="partner{{ loop.index }}" src="{{ getAssetUrl(data) }}" data>
+			{% endfor %}
+		</div>
+		<div class="media">
+			  <div class="tringle"></div>
+			  <div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="{{getAssetUrl(entry.tooltip.media_object) }}" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body"> {{ entry.tooltip.tooltip_desc }} </div>
+		</div>
+		<div class="sign_up"> Sign up now </div>
+	</div>
+{% endblock %}

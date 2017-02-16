@@ -1,0 +1,304 @@
+/*-----------------------------------------------------------BODY RESET CSS FOR fortifyondemand------------------------------------------*/
+
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+.cantainer-fluid{
+	margin-top: 1px;
+	border-top: solid 2px #ffa12d;;
+}
+.navbar-inverse{
+
+}
+.help_wapper .help{
+	color: #fff;
+	border-left: 1px solid #292f34;
+	border-right: 1px solid #292f34;
+
+}
+.navigation{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1142px;
+}
+.logo{
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.help_wapper{
+	float: right;
+    overflow: auto;
+}
+.cantainer-fluid .navbar-inverse .navigation .help_wapper .help a.help-modal{
+	margin-top: 6px;
+	margin-left: 34px;
+	margin-right: 34px;
+	margin-bottom: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    display: inline-block;
+    line-height: 0px;
+padding: 10px 5px;
+}
+
+.cantainer-fluid .navbar-inverse .navigation .help_wapper .help .help-modal:before{
+	 content: '?';
+	color: #fff;
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+
+}
+
+.cantainer-fluid .navbar-inverse .navigation .help_wapper .help .help-modal:after{
+	content: '';
+	width: 0; 
+    height: 0; 
+    top: 34px;
+    margin-left: -9px;
+    position: absolute;
+  	border-left: 4px solid transparent;
+ 	border-right: 4px solid transparent;
+ 	border-top: 4px solid #fff;
+}
+.sub-cantainer{
+	margin-left: auto;
+	margin-right: auto; 
+	max-width: 1142px;
+}
+/*----------------------------------------------------CANTENT CSS---------------------------------------------------------------*/
+
+.row.one{
+	border-bottom: 
+}
+.back{
+	position: absolute;
+	float: left;
+	margin-top: 40px;
+	margin-left: -8px;
+	color: #12a9b2;
+	font-family: Myriad Pro;
+	font-size: 18px;
+}
+.lead{
+	text-align: center;
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Myriad Pro;
+	font-size: 30px !important;
+	color: #666666;
+}
+.horizontal-row{
+	width: 100%;
+	padding: 1px;
+	background-color: #d8dce1;
+	border-top: solid 1px #979a9e;
+	border-bottom: solid 1px #eef2f6;
+}
+/*------------------------------------------GRID BOX-----------------------------------------------------*/
+.col-md-6{
+	padding-left: 0px !important;
+	padding-right: 10px;
+	width: 25% !important;
+	font-family: Myriad Pro;
+	color: #fff;
+}
+
+.classWithPad{
+	text-align: center;
+	margin:1px; padding:10px;
+	border:solid 1px #cfeae6;
+	background-color: #109682;
+}
+.cantainer-fluid .sub-cantainer .row-fluid{
+	    margin-top: 30px;
+	clear: both;
+	overflow: auto;
+}
+.cantainer-fluid .sub-cantainer .row-fluid .col-md-6:first-child{
+	padding-left: 7px;
+}
+.sml-lbl{
+	max-width: 100%;
+	text-align: center;
+	font-size: 15.25px;
+}
+.lrg-lbl{
+	max-width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+/*- - - -----------------------------------collpase css-------------------------------------------------------------------------*/
+.feature{
+	position: relative;
+	padding-left: 33px;
+	padding-right: 33px;
+	padding-top: 107px;
+	color: #a5aaaf;
+	text-align: center;
+}
+.display-feature{
+	
+	font-size: 14px;
+	font-family: Myriad Pro;
+	color: #33b0b8;
+}
+.display-feature:before , after{
+	margin-left: -11%;
+}
+.display-feature:before{
+    left: 151px;
+    position: absolute;
+    width: 42%;
+    height: 3px;
+    content: '';
+    border-bottom: 1px dashed #c4c7cb;
+    margin-top: .50em;
+}
+.display-feature:after , before {
+	margin-left: 1%;
+}
+.display-feature:after{
+    right: 34px;
+    position: absolute;
+    width: 42%;
+    height: 3px;
+    content: '';
+    border-bottom: 1px dashed #c4c7cb;
+    margin-top: .50em;
+}
+.btn-collapse{
+	position: relative;
+}
+.cantainer-fluid .sub-cantainer .feature .btn-collapse{
+	content: '';
+	width: 0; 
+    height: 0; 
+        top: 8px;
+    margin-left: -10px;
+  /*  margin-top: 12px;*/
+  	border-left: 5px solid transparent;
+ 	border-right: 5px solid transparent;
+ 	border-top: 5px solid #a6abb0;  
+  	/*border-bottom: 5px solid #a6abb0;*/
+}
+.test{
+	content: '';
+	width: 0; 
+    height: 0; 
+        top: 0px;
+    margin-left: -10px;
+    margin-top: 0px;
+  	border-left: 5px solid transparent;
+ 	border-right: 5px solid transparent;
+  	border-bottom: 5px solid #a6abb0;
+}
+.fortiy-desc{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Myriad Pro;
+	font-size: 24px;
+	color: #666666;
+	max-width: 1142px;
+}
+.collapse{
+	margin-bottom: 78px;
+	padding-top: 60px;
+    padding-bottom: 60px;
+	background-color: #f4f7f7;
+	border-bottom: dashed 1px red;
+}
+/*-------------------------------------------------------------table css -------------------------------------------------------*/
+.packages{
+	overflow: hidden;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*----------------------------------------------------------FOOTER ---------------------------------------------------------*/
+.Footer{
+	background-color: #1f2327;
+	clear: both;
+	overflow: auto;
+}
+.footer-bar{
+	position: relative;
+	padding-top: 20px;
+	clear: both;
+	overflow: auto;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-logo{
+	float: right;
+}
+.img-wapper{
+	margin-top: 0px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+   float: right;
+    border: solid 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+.footer-bar:before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    left: 0;
+    /* height: 1px; */
+    top: 8px;
+    bottom: 0;
+    margin: auto;
+    width: 95.2%;
+    height: 1px;
+}
+.privacy-text{
+	    margin-top: 30px;
+	float: left;
+}
+.privacy-text a{
+	text-decoration: none;
+	float: left;
+	font-family: Myriad Pro;
+	font-size: 12px;
+	color: #fff;
+}
+.tc{
+	padding-left: 6px;
+}
+.pp{
+	    padding-right: 4px;
+}
+.tradmark{
+	    margin-top: 30px;
+	padding-right: 10px;
+	float: right;
+	font-family: Myriad Pro;
+	font-size: 14px;
+	color: #fff;
+}
+/*.bar-line{
+	position: absolute;
+	clear: both;
+	overflow: auto;
+	float: left;
+	max-width: 90%;
+	height: 50px;
+	border-bottom: solid 1px #fff;
+}*/
+
+/*.table-cantainer table thead td:first-child{
+	width: 240px !important;
+}*/
+

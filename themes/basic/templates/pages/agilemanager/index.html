@@ -1,0 +1,51 @@
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -page content  - - - - - - - - - - - - - - - - - - - - - - - -  -  -->
+	<div class="sub_container">
+			<span class="pricing">{{entry.banner.title}}</span>
+			<div class="horizontal-row"></div>
+			<div class="banner_text">
+				{{entry.banner.sub_title}}
+			</div>
+			<div class="managers_list">
+				<table class="table table-bordered">
+					<caption> <span class="start_cost"> {{entry.managers.caption}} </span> </caption>
+					{% for data in entry.managers.group %}
+						<tbody>
+							<tr>
+								<td><img class="manager_logo" src="{{getAssetUrl(data.manager_icon)}}"></td>
+								<td>
+									<span class="manager_title">{{data.manager_name}}</span>
+									<p class="manager_desc">{{data.manager_desc}}</p>
+								</td>
+								<td>
+									<span class="price"><b>{{data.manager_cost}}</b></span>
+									<span class="month">/month</span>
+								</td>
+								<td>
+									<div class="try_me"> {{data.link_try_me}} </div>
+									<div class="Contact_Us"> {{data.link_contact_us}} </div>
+								</td>
+							</tr>
+						</tbody>
+					{% endfor %}
+				</table>
+			</div>
+			<div class="contact_sales">
+				<span class="need_help"> {{entry.managers.need_help }} </span>
+				<div class="contact_sales_btn"> {{entry.managers.link_contact_sales}} </div>
+			</div>
+		</div>
+		<div class="last_container">
+			<div class="access_to_hp">
+				<div class="pronq_warpper">
+					<p class="pronq_access_text"> {{entry.pronq_access.title }} </p>
+					<p class="resources_text"> {{entry.pronq_access.sub_title}} </p>
+					<div class="community"> {{entry.pronq_access.link_community}} </div>
+					<div class="learn"> {{ entry.pronq_access.link_learn }} </div>
+				</div>
+			</div>
+	</div>
+{% endblock %}

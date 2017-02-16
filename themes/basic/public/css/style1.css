@@ -1,0 +1,397 @@
+/*-----------------------------------------------------------BODY RESET CSS FOR agile manager ------------------------------------------*/
+body {
+	font-family: Myriad Pro;
+	background-color: #f7f7f7;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+.cantainer-fluid{
+	margin-top: 1px;
+	border-top: solid 2px #ffa12d;;
+}
+.navbar-inverse{
+
+}
+.help{
+	color: #fff;
+	border-left: 1px solid #292f34;
+	border-right: 1px solid #292f34;
+	    padding-bottom: 5px;
+}
+.navigation{
+	    clear: both;
+    overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1142px;
+}
+.navbar-header .logo{
+	padding-top: 4px;
+}
+.cantainer-fluid .navbar-inverse .navigation .help a.help-modal{
+	margin-top: 17px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    display: inline-block;
+    line-height: 0px;
+    padding: 7px 4px;
+}
+
+.cantainer-fluid .navbar-inverse .navigation .help .help-modal:before{
+	 content: '?';
+	color: #fff;
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+}
+.cantainer-fluid .navbar-inverse .navigation .help .help-modal:after{
+    content: '';
+    width: 0;
+    height: 0;
+    top: 36px;
+    margin-left: -8px;
+    position: absolute;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+.cantainer-fluid .navbar-inverse .navigation .sign_in{
+	padding-top: 18px;
+    padding-bottom: 11px;
+    border-left: solid 1px #292f34;
+}
+.cantainer-fluid .navbar-inverse .navigation .sign_in .sign_text{
+	font-family: Myriad Pro;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 60px;
+
+}
+.cantainer-fluid .navbar-inverse .navigation .sign_in .profile{
+	margin-right: 42px;
+}
+.cantainer-fluid .navbar-inverse .navigation .search_box{
+	display: inline;
+	padding-top: 12px;
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 9px;
+	border-right: solid 1px #292f34;
+	position: relative;
+}
+.cantainer-fluid .navbar-inverse .navigation .search_box .search_text{
+	background-color: #464a51;
+	border:none;
+	border-radius: 20px;
+	height: 28px;
+	max-width: 81px;
+	position: relative;
+}
+.cantainer-fluid .navbar-inverse .navigation .search_box .search_icon{
+	top: 17px;
+    /* left: 64px; */
+    bottom: 0;
+    right: 25px;
+    position: absolute;
+    float: right;
+}
+/* ---- ------------------------------------------------------SUB CONTAINER --------------------------------------------*/
+.sub_container{
+	clear: both;
+	overflow: auto;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f7f7f7;
+}
+.sub_container .pricing{
+	padding-bottom:20px;
+	padding-top: 44px;
+	float: left;
+	font-family: Myriad Pro;
+	font-size: 40px;
+	color: #6d7378;
+}
+.horizontal-row{
+	clear: both;	
+	width: 100%;
+	padding: 1px;
+	background-color: #d8dce1;
+	border-top: solid 1px #979a9e;
+}
+.banner_text{
+	text-align: center;
+	clear: both;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	font-family: Myriad Pro;
+	font-size: 29px;
+	font-weight: regular;
+	color: #292f34;
+}
+/*-----------------------------------------------------------------TABLE HEADER ----------------------------------------------------*/
+.managers_list{
+	clear: both;
+	overflow: auto;
+}
+.manager_title{
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #12a9b2;
+	display: block;
+	text-align: left;
+}
+.manager_desc{
+	font-family: Myriad Pro;
+	font-size: 14px;
+	color: #292f34;
+	display: block;
+	text-align: left;
+}
+.price{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #292f34;
+}
+.month{
+	font-family: Myriad Pro;
+	font-size: 14px;
+	color: #292f34;
+}
+.try_me {
+	margin-right: 10px;
+	padding-top: 12px;
+    padding-bottom: 9px;
+    display: inline;
+    background-color: #f7f7f7;
+    border: solid 1px #12a9b2;
+    border-radius: 4px;
+    text-align: center;
+    padding-left: 42px;
+    padding-right: 42px;
+    color: #12a9b2;
+}
+.Contact_Us {
+		margin-right: 0px;
+	    padding-top: 13px;
+	    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 10px;
+	display: inline;
+	background-color: #12a9b2;
+	border-radius: 4px;
+	color: #fff;
+}
+.manager_logo{
+	filter: grayscale(98%);
+	opacity: 0.5;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.start_cost{
+	padding-left: 145px;
+}
+/*-----------------------------------------------------------contact_sales--------------------------------------------------------*/
+.contact_sales{
+	    padding-top: 10px;
+    padding-bottom: 45px;
+	clear: both;
+	overflow: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contact_sales .need_help{
+	padding-right: 14px;
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #292f34; 
+}
+.contact_sales .contact_sales_btn{
+	padding-top: 12px;
+    padding-left: 42px;
+    padding-bottom: 8px;
+    padding-right: 47px;
+    display: inline-block;
+    font-family: Myriad Pro;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f69011;
+    border-radius: 5px;
+}
+/*------------------------------------------------------------last_container-----------------------------------------------------------*/
+.last_container{
+	max-width: 100%;
+	background-image: url(../images/demoBg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.last_container .access_to_hp{
+	clear: both;
+	overflow: auto;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.last_container .access_to_hp .pronq_warpper{
+	padding-top: 121px;
+	padding-bottom: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+.last_container .access_to_hp .pronq_warpper .pronq_access_text{
+	font-family: Myriad Pro;
+	font-size: 30px;
+	color: #fff;
+}
+.last_container .access_to_hp .pronq_warpper .resources_text{
+	margin-top: 20px;
+    margin-bottom: 38px;
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #fff;
+}
+.last_container .access_to_hp .pronq_warpper .community{
+	display: inline-block;
+	padding-top: 14px;
+	padding-left: 32px;
+	padding-bottom: 19px;
+	padding-right: 36px;
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #fff;
+	background-color: #548c9d;
+	border-radius: 4px;
+	opacity: 0.5;
+	margin-right: 15px;
+}
+.last_container .access_to_hp .pronq_warpper .learn{
+	display: inline-block;
+	padding-top: 14px;
+	padding-bottom: 19px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #548c9d;
+	opacity: 0.5;
+}
+/*---------------------------------------------------------FOOTER -------------------------------------------------------------*/
+.footer_container{
+	clear: both;
+	overflow: auto;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.heading7{	
+	font-family: Myriad Pro;
+    padding-bottom: 15px;
+    font-size: 18px;
+    border-bottom: solid 1px;
+    color: #ffa433;
+}
+.footer-ul{
+	list-style: none;
+	color: #fff;
+	font-family: Myriad Pro;
+	font-size: 16px;
+
+}
+.common{
+	margin-right: 0px;
+}
+.facebook_icon{
+	float: left;
+}
+.twitter_icon{
+	margin-left: 60px;
+}
+.linkedin{
+	margin-left: 60px;
+}
+.youtube{
+	float: right;
+}
+
+.footer_container .footer-bar{
+	margin-bottom: 150px;
+	position: relative;
+	padding-top: 20px;
+	clear: both;
+	overflow: auto;
+	max-width: 1142px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-logo{
+	float: right;
+}
+.img-wapper{
+	margin-top: 0px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+   float: right;
+    border: solid 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+.footer_container .footer-bar:before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    left: 0;
+    /* height: 1px; */
+    top: 8px;
+    bottom: 0;
+    margin: auto;
+    width: 95.2%;
+    height: 1px;
+}
+.privacy-text{
+	    margin-top: 30px;
+	float: left;
+}
+.privacy-text a{
+	text-decoration: none;
+	float: left;
+	font-family: Myriad Pro;
+	font-size: 12px;
+	color: #fff;
+}
+.tc{
+	padding-left: 6px;
+}
+.pp{
+	    padding-right: 4px;
+}
+.tradmark{
+	    margin-top: 30px;
+	padding-right: 10px;
+	float: right;
+	font-family: Myriad Pro;
+	font-size: 14px;
+	color: #fff;
+}
+/*.cantainer-fluid .navbar-inverse .navigation .nav_menus{
+	overflow: auto;
+}

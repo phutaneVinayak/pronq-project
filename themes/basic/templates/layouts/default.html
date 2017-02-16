@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{entry.title}}</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+{% set url = entry.url %}
+{% if url == "/fortifyondemand" %}
+    <style type="text/css">
+    	body{
+			font-family: Myriad Pro;
+			background-color: #f7f7f7;
+		}
+		.row{
+			/*position: relative;*/
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.packages .table.table-bordered {
+		    overflow: hidden;
+		    border-top-left-radius: 6px;
+		    border-top-right-radius: 6px;
+		    border-bottom-right-radius: 15px;
+		    border-bottom-left-radius: 15px;
+		}
+		.packages .table-bordered > thead{
+			font-family: Myriad Pro;
+			font-size: 18px;
+			color: #fff;
+		}
+		.packages .table-bordered > thead > tr > td {
+			padding-top: 15px;
+			text-align: center;
+			background-color: #40ab9b;
+		}
+		.packages .table-bordered > tbody > tr > td{
+			border:none;
+			    width: 20%;
+		}
+		.packages .table > thead > tr > td:first-child{
+			width: 21%;
+			text-align: right;
+			background-color: #109682;
+		}
+		.packages .table-bordered > thead > tr > td{
+			border:none;
+		}
+		.packages .table-bordered > thead > tr > td >span {
+			padding: 5px;
+		}
+		.quote{
+			padding-left: 65px;
+			padding-top: 15px;
+			    padding-bottom: 5px;
+			font-family: Myriad Pro;
+			font-size: 18px;
+			color: #666666;
+			text-align: center;
+
+		}
+		.box-modal{
+			margin-bottom: 13px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			font-family: Myriad Pro;
+			font-size: 18px;
+			color: #fff;
+			text-align: center;
+			border:2px solid #ffa12d;
+			background-color: #ffa12d;
+			border-radius: 3px;
+		}
+		.contact-us{
+			padding-left: 34px;
+			background-color: #fff;
+			color: #ffa12d;
+		}
+		.price{
+			padding-top: 9px;
+			padding-bottom: 3px;
+			text-align: center;
+			font-family: Myriad Pro;
+			font-size: 24px;
+			color: #40ab9b;
+		}
+		.row-header{
+			text-align: right;
+			font-family: Myriad Pro;
+			font-size: 16px;
+			color: #666666;
+		}
+		.cell{
+			text-align: center;
+			color: #b5b8bb;
+			font-size: 16px;
+		}
+		.rows{
+			background-color: #ebf0f5;
+			border-bottom: 1px solid #fff;
+		}
+		.demo{
+			background-color: #fbfcfd;
+		}
+		.packages .threats-desc{
+			margin-bottom: 35px;
+			font-size: 12px;
+			font-family: Myriad Pro;
+			color: #292f34;
+			text-align: center;
+		}
+		.last_container{
+			max-width: 100%;
+			background-image: url("{{getAssetUrl(entry.pronq_access.background_cover)}}");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+{% endif %}
+{% if url == "/agilemanager" %}
+	<style type="text/css">
+			.navbar {
+				min-height: 0px;
+				margin-bottom: 0px;
+			}
+			.navbar-header {
+		        float: left;
+			    padding-top: 12px;
+			    padding-bottom: 5px;
+			}
+			.navbar-nav {
+				    padding-left: 65px;
+			}
+			.navbar-inverse .navbar-nav > li {
+				padding-left: 32px;
+			}
+			.navbar-inverse .navbar-nav > li > a{
+				padding-top: 20px;
+			   	padding-bottom: 0px; 
+			   	font-family: Myriad Pro;
+			   	font-size: 14px;
+			   	color: #fff !important;
+			}
+			.managers_list .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+				vertical-align: middle ;
+			}
+			.managers_list .table-bordered > tbody > tr > td{
+				border:none;
+				    width: 10%;
+			}
+			.managers_list .table.table-bordered > caption{
+				font-family: Myriad Pro;
+				font-size: 13px;
+				color: #292f34;
+				    text-align: center;
+				    background-color: #ebebeb;
+				    border:solid 1px #b5b8bb;
+			}
+			.managers_list .table-bordered {
+			    border: 1px solid #b5b8bb;
+			    border-radius: 2px;
+			}
+			.managers_list .table > tbody > tr > td:first-child{
+				text-align: center;
+				vertical-align: middle;
+				width: 5%;
+			}
+			.managers_list .table > tbody >tr > td:nth-child(3){
+				text-align: center;
+				vertical-align: middle;
+			}
+			footer {
+				background-color: #1f2227;
+			}
+			.row{
+				margin: 0px 0px 50px 0px;
+
+				padding: 0px;
+			}
+			.col-md-4{
+				padding-top: 70px;
+				width: 19%;
+				margin-right: 68px;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.col-md-4:last-child{
+				margin-right: 0px;
+				width: 25%;
+			}
+	</style>
+{% endif %}
+{% if url == "/pronq" %}
+		<style type="text/css">
+			body{
+				text-align: center;
+				vertical-align: middle;
+			}
+			.cantainer-fluid {
+			    margin-top: 0px;
+			    border-top: none;
+			}
+			.navbar {
+			     border-radius: 0px; 
+			}
+			.navbar.navbar-inverse{
+				margin-bottom: 0px;
+				border:none;
+
+			}
+			
+			h1{
+				margin: 0px;
+				padding: 0px;
+				font-weight: 400;
+	    		line-height: 1.1;
+			}
+			p {
+			    margin: 0 0 5px;
+			}
+			.col-md-4{
+			    width: 33%;
+			    /* margin-left: auto; */
+			    /* margin-right: auto; */
+			    float: left;
+			  	padding-right: 41px;
+    			padding-left: 41px;
+			}
+			.tooltip-inner {
+				background-color: #fff;
+				 border:solid 1px #000;
+			    color: #42494f;
+			    font-family: Myriad Pro;
+			    font-size: 16px;
+			}
+			.tooltip.bottom > .tooltip-arrow {
+				border-bottom-color:#f00; 
+			/*	border:1px solid #000;*/
+			}
+			.media{
+				margin-top: 37px;
+			    overflow: visible;
+			    padding: 26px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    left: 0;
+			    right: 0;
+			    top: 330px;
+			    /* left: auto; */
+			    /* right: auto; */
+			    width: 970px;
+			    display: block;
+			    position: absolute;
+			    border: solid 1px #8e9295;
+			    border-radius: 2px;
+			}
+			.media-body{
+				text-align: left;
+				font-family: Myriad Pro;
+				font-size: 16px;
+				color: #42494f;
+			}
+			.media-body p{
+				margin-top: 15px;
+				display: block;
+			}
+			.media-body span{
+				display: block;
+				margin-left: 30px;
+			}
+			footer {
+				background-color: #1f2227;
+				overflow: hidden;
+			}
+		</style>
+{% endif %}
+</head>
+<body>
+<div class="cantainer-fluid">
+	{% include "partials/header.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "partials/footer.html" %}
+</div>
+    
+</body>
+	<script type="text/javascript" src="/static/js/script.js"></script>
+    <script type="text/javascript" src="/static/js/fortifyondemand.js"></script>
+    <script type="text/javascript" src="/static/js/pronq.js"></script>
+</html>
