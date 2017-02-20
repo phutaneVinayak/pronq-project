@@ -3,7 +3,7 @@
 	<div class="Footer">
 		<div class="footer-bar">
 				<div class="img-wapper">
-						<img src="{{getAssetUrl(entry.footer.footer_logo)}}">
+					<img src="{{getAssetUrl(entry.footer.footer_logo)}}">
 				</div>
 				<div class="privacy-text">
 					<a class="pp" href="#">Privacy Policy</a> <a class="tc" href="#"> | &nbsp;&nbsp;Terms and Conditions</a>
@@ -22,33 +22,31 @@
 				<div class="col-md-4 ">
 					<h6 class="heading7"> {{ data.title }} </h6>
 					<ul class="footer-ul">
-						<li> {{data.footer_link1}} </li>
-						<li> {{data.footer_link2}} </li>
-						<li> {{data.footer_link3}} </li>
-						<li> {{data.footer_link4}} </li>
-						<li> {{data.footer_link5}} </li>
-						<li> {{data.footer_link6}} </li>
-						<img class="common facebook_icon" src="{{getAssetUrl(data.facebook_icon)}}">
-						<img class="common twitter_icon" src="{{getAssetUrl(data.twitter_icon)}}">
-						<img class="common linkedin" src="{{getAssetUrl(data.linkedin_icon)}}">
-						<img class="common youtube" src="{{getAssetUrl(data.youtub_icon)}}">
+						<li> <a href=""> {{data.footer_link1}} </a> </li>
+						<li> <a href=""> {{data.footer_link2}} </a> </li>
+						<li> <a href=""> {{data.footer_link3}} </a> </li>
+						<li> <a href=""> {{data.footer_link4}} </a> </li>
+						<li> <a href=""> {{data.footer_link5}} </a> </li>
+						<li> <a href=""> {{data.footer_link6}} </a> </li>
+						<a href=""> <img class="common facebook_icon" src="{{getAssetUrl(data.facebook_icon)}}"> </a>
+						<a href=""> <img class="common twitter_icon" src="{{getAssetUrl(data.twitter_icon)}}"> </a>
+						<a href=""> <img class="common linkedin" src="{{getAssetUrl(data.linkedin_icon)}}"> </a>
+						<a href=""> <img class="common youtube" src="{{getAssetUrl(data.youtub_icon)}}"> </a>
 					</ul>
 				</div>
 			{% endfor %}
 			</div>
-
 			<div class="footer-bar">
 				<div class="img-wapper">
 						<img src="{{getAssetUrl(entry.footer.company_icon)}}">
 				</div>
 				<div class="privacy-text">
-					<a class="pp" href="#">Privacy Policy</a> <a class="tc" href="#"> | &nbsp;&nbsp;Terms and Conditions</a>
+					<a class="pp" href="#"> Privacy Policy </a> <a class="tc" href="#"> | &nbsp;&nbsp; Terms and Conditions </a>
 				</div>
 				<div class="tradmark">
 					© 2013 pronq.com
 				</div>
 			</div>
-
 		</div>
 	</footer>
 {% endif %}
@@ -56,11 +54,11 @@
 <footer>
 	<div class="social_site">
 	{% for data in entry.footer.social_site.site_icon %}
-		<img class="_social" src="{{getAssetUrl(data)}}">
+		<a href="#"> <img class="_social" src="{{getAssetUrl(data)}}"> </a>
 	{% endfor %}
 	</div>
 	<div class="test1">
-		<a href="#"> Privacy Policy   </a> |
+		<a href="#"> Privacy Policy   </a> &nbsp; | &nbsp;
 		<a href="#"> Terms and Conditions </a>
 	</div>
 	<div class="copyrights_pronq">

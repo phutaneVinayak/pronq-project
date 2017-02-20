@@ -12,7 +12,7 @@
 			<p class="desc2"> {{entry.banner.banner_desc2}} </p>
 		</div>
 		<div class="float_div">
-			<a class="collapse" href="#"></a>
+			<a href="#" class="collapse" href="#"></a>
 			<i class="arr-down"></i>
 			<div class="float_div_intro">
 				<p class="title"> {{ entry.float_box.title }} </p>
@@ -37,17 +37,23 @@
 		<p class="container_title"> {{entry.middle_container.title }} </p>
 		<p class="container_sub_title"> {{entry.middle_container.sub_title}} </p>
 		<div class="tools">
+		<script type="text/javascript">
+			var newdata = "{{entry.middle_container.hover_text}}";
+			console.log(newdata);
+		</script>
 		{% for data in entry.middle_container.tools %}
 			<div class="tool_box">
-				<div class="tool_wrapper">
-					<p class="tool_title"> {{ data.title }} </p>
-					<img class="tool_img" src="{{getAssetUrl(data.tool_img)}}" />
-					<p class="learn_more"> {{ data.sub_title }} </p>
+				<div class="tool_wrapper" id="box{{loop.index}}">
+					<div class="box_wrapper">
+						<p class="tool_title"> {{ data.title }} </p>
+						<img class="tool_img" src="{{getAssetUrl(data.tool_img)}}" />
+						<p class="learn_more"> <a href="#"> {{ data.sub_title }} </a> </p>
+					</div>	
 				</div>
 			</div>
 		{% endfor %}
 		</div>
-		<div class="link_partner_with_us"> {{ entry.middle_container.link_partner_with_us }} </div>
+		<div class="link_partner_with_us"> <a href="#"> {{ entry.middle_container.link_partner_with_us }} </a> </div>
 	</div>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - LAST CONTINER  - - - - - - - - - - - - - - - - -  -->
 	<div class="last_container">
@@ -69,9 +75,8 @@
 			  <div class="media-body">
 			   		{{ entry.tooltip.tooltip_desc }} 
 			  </div>
-			  
 		</div>
-		<div class="sign_up"> Sign up now </div>
+		<div class="sign_up"> <a href="#"> Sign up now </a> </div>
 	</div>
 
 {% endblock %}

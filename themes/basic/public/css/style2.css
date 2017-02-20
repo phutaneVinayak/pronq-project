@@ -33,8 +33,6 @@
 	padding-right: 17px;
 }
 .navbar-inverse .right_navigation .create_account{
-	font-family: Myriad Pro;
-	font-size: 18px;
 
 	display: inline-block;
 	padding-top: 2px;
@@ -42,6 +40,12 @@
 	padding-right: 20px;
 	padding-bottom: 2px;
 	background-color: #f99d2a;
+	
+}
+.navbar-inverse .right_navigation .create_account a{
+	text-decoration: none;
+		font-family: Myriad Pro;
+	font-size: 18px;
 	color: #fff;
 }
 /*---------------------------------------------------------------PAGE CONTENT -------------------------------------------------*/
@@ -240,15 +244,52 @@ width: 24px;
 	height: auto;
 	text-align: center;
 	vertical-align: middle;
-	    padding-right: 15px;
-	        margin-bottom: 10px;
-
+	padding-right: 15px;
+	margin-bottom: 10px;
 }
 .cantainer-fluid .middle_container .tools .tool_box .tool_wrapper{
 	background-color: #fff;
-	    clear: both;
+	clear: both;
     overflow: auto;
     border:solid 1px #b3b6b9;
+}
+.hover_cover{
+	display: block;
+	background-color: #42494f;
+	border:solid 1px #5b6166;
+	margin: 9px;
+	height: 254px;
+	text-align: center;
+	vertical-align: middle;
+}
+.hover_cover p{
+    /* margin-top: 80px; */
+    padding-top: 80px;
+    color: #fff;
+    padding-left: 48px;
+    padding-right: 40px;
+    padding-bottom: 58px;
+    font-family: Myriad Pro;
+    font-size: 18px;
+    text-align: center;
+}
+.hover_cover a{
+	text-decoration: none;
+	font-family: Myriad Pro;
+	font-size: 16px;
+	color: #fff;
+}
+.hover_cover a:after{
+content: 'x';
+    color: #f99d2a;
+    font-weight: 300;
+    font-family: Myriad Pro;
+    font-size: 21px;
+    padding-left: 13px;
+}
+.cantainer-fluid .middle_container .tools .box_wrapper{
+	clear: both;
+	overflow: auto;
 }
 .cantainer-fluid .middle_container .tools .tool_box .tool_title{
 	    font-family: Myriad Pro;
@@ -262,15 +303,26 @@ width: 24px;
 	margin-right: auto;
 	margin-left: auto;
 	max-height: 109px !important;
+	width: 403px;
 }
 .cantainer-fluid .middle_container .tools .tool_box .learn_more{
-    font-family: Myriad Pro;
     margin-top: 41px;
-    font-size: 21px;
+}
+.cantainer-fluid .middle_container .tools .tool_box .learn_more a{
+	text-decoration: none;
+	font-family: Myriad Pro;
+	font-size: 21px;
     color: #42494f
 }
+.cantainer-fluid .middle_container .tools .tool_box .learn_more a:after{
+	content: '+';
+	color: #f99d2a;
+	font-weight: 300;
+	font-family: Myriad Pro;
+	font-size: 21px;
+	padding-left: 3px;
+}
 .cantainer-fluid .middle_container .link_partner_with_us{
-    color: #fff;
     max-width: 192px;
     margin-top: 62px;
     margin-left: auto;
@@ -279,13 +331,18 @@ width: 24px;
     text-align: center;
     vertical-align: middle;
     background-color: #f99d2a;
-    font-family: Myriad Pro;
     font-size: 21px;
     padding-left: 28px;
     padding-right: 28px;
     padding-top: 19px;
     padding-bottom: 15px;
     border-radius: 4px;
+}
+.cantainer-fluid .middle_container .link_partner_with_us a{
+	text-decoration: none;
+	
+    font-family: Myriad Pro;
+    color: #fff;
 }
 /* ------------------------------------------------------------------last_container ------------------------------------------------------*/
 .last_container{
@@ -391,9 +448,7 @@ width: 24px;
 	margin-right: auto;
 	margin-bottom: 60px;
 	max-width: 198px;
-	font-family: Myriad Pro;
-	font-size: 21px;
-	color: #fff;
+	
 	background-color: #f99d2a;
 	padding-top: 19px;
 	padding-bottom: 15px;
@@ -401,11 +456,20 @@ width: 24px;
 	padding-right: 39px;
 	border-radius: 4px;
 }
+.last_container .sign_up a{
+	    text-decoration: none;
+	font-family: Myriad Pro;
+	font-size: 21px;
+	color: #fff;
+}
 /*-------------------------------------------------------foooter--------------------------------------------------------------------*/
 .social_site{
 	float: right;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+social_site a{
+	text-decoration: none;
 }
 ._social{
 	margin-right: 25px;
@@ -423,12 +487,11 @@ width: 24px;
     vertical-align: middle;
 }
 .test1 a{
-	text-decoration: none;
 	font-family: Myriad Pro;
 	font-size: 12px;
 	color: #fff;
-	text-align: center;
-	vertical-align: middle;
+	text-decoration: none;
+
 }
 .copyrights_pronq{
 	font-family: Myriad Pro;

@@ -18,10 +18,10 @@ ul,li{
 	color: #fff;
 	border-left: 1px solid #292f34;
 	border-right: 1px solid #292f34;
-	    padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 .navigation{
-	    clear: both;
+	clear: both;
     overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -186,9 +186,9 @@ ul,li{
     color: #12a9b2;
 }
 .Contact_Us {
-		margin-right: 0px;
-	    padding-top: 13px;
-	    padding-left: 42px;
+	margin-right: 0px;
+    padding-top: 13px;
+    padding-left: 42px;
     padding-right: 42px;
     padding-bottom: 10px;
 	display: inline;
@@ -208,7 +208,7 @@ ul,li{
 }
 /*-----------------------------------------------------------contact_sales--------------------------------------------------------*/
 .contact_sales{
-	    padding-top: 10px;
+	padding-top: 10px;
     padding-bottom: 45px;
 	clear: both;
 	overflow: auto;
@@ -234,38 +234,32 @@ ul,li{
     border-radius: 5px;
 }
 /*------------------------------------------------------------last_container-----------------------------------------------------------*/
-.last_container{
-	max-width: 100%;
-	background-image: url(../images/demoBg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.last_container .access_to_hp{
+.last_container1 .access_to_hp{
 	clear: both;
 	overflow: auto;
 	max-width: 1142px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.last_container .access_to_hp .pronq_warpper{
+.last_container1 .access_to_hp .pronq_warpper{
 	padding-top: 121px;
 	padding-bottom: 100px;
 	text-align: center;
 	vertical-align: middle;
 }
-.last_container .access_to_hp .pronq_warpper .pronq_access_text{
+.last_container1 .access_to_hp .pronq_warpper .pronq_access_text{
 	font-family: Myriad Pro;
 	font-size: 30px;
 	color: #fff;
 }
-.last_container .access_to_hp .pronq_warpper .resources_text{
+.last_container1 .access_to_hp .pronq_warpper .resources_text{
 	margin-top: 20px;
     margin-bottom: 38px;
 	font-family: Myriad Pro;
 	font-size: 18px;
 	color: #fff;
 }
-.last_container .access_to_hp .pronq_warpper .community{
+.last_container1 .access_to_hp .pronq_warpper .community{
 	display: inline-block;
 	padding-top: 14px;
 	padding-left: 32px;
@@ -279,7 +273,7 @@ ul,li{
 	opacity: 0.5;
 	margin-right: 15px;
 }
-.last_container .access_to_hp .pronq_warpper .learn{
+.last_container1 .access_to_hp .pronq_warpper .learn{
 	display: inline-block;
 	padding-top: 14px;
 	padding-bottom: 19px;
@@ -310,9 +304,20 @@ ul,li{
 .footer-ul{
 	list-style: none;
 	color: #fff;
+/*	font-family: Myriad Pro;
+	font-size: 16px;*/
+}
+.footer-ul a {
+	text-decoration: none;
+	color: #fff;
 	font-family: Myriad Pro;
 	font-size: 16px;
-
+}
+.footer-ul a:hover {
+	text-decoration: none;
+	color: #fff;
+	font-family: Myriad Pro;
+	font-size: 16px;
 }
 .common{
 	margin-right: 0px;
@@ -378,20 +383,23 @@ ul,li{
 	font-size: 12px;
 	color: #fff;
 }
+.privacy-text a:hover {
+	text-decoration: none;
+	color: #fff;
+	font-family: Myriad Pro;
+	font-size: 12px;
+}
 .tc{
 	padding-left: 6px;
 }
 .pp{
-	    padding-right: 4px;
+	padding-right: 4px;
 }
 .tradmark{
-	    margin-top: 30px;
+	margin-top: 30px;
 	padding-right: 10px;
 	float: right;
 	font-family: Myriad Pro;
 	font-size: 14px;
 	color: #fff;
-}
-/*.cantainer-fluid .navbar-inverse .navigation .nav_menus{
-	overflow: auto;
 }
