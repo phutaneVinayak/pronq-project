@@ -44,7 +44,7 @@ ul,li{
     /* font-weight: bold; */
     display: inline-block;
     line-height: 0px;
-padding: 10px 5px;
+	padding: 10px 5px;
 }
 
 .cantainer-fluid .navbar-inverse .navigation .help_wapper .help .help-modal:before{

@@ -1,0 +1,248 @@
+/*--------------------------------------------------------body-------------------------------------------------------------*/
+ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+.cantainer-fluid{
+	border-top: solid 2px #ffa12d;
+}
+.main-container{
+	clear: both;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav-wrapper{
+	clear: both;
+	max-width: 1140px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav-wrapper .navbar-marketing-header{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+.nav-wrapper .right_navigation{
+	float: right;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav-wrapper .right_navigation a{
+	text-decoration: none;
+	display: inline;
+	margin-right: 17px;
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color:#fff;	
+}
+.nav-wrapper .create_account{
+	display: inline;
+	overflow: auto;
+	font-family: Myriad Pro;
+	font-size: 18px;
+    margin-right: -26px;
+	padding-left: 26px;
+	padding-right: 26px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #fff;
+	background-color: #ffa12d;
+	border-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.nav-wrapper .create_account a{
+	text-decoration: none;
+}
+/*---------------------------------------------------BANNER SECTION ----------------------------------------------------------*/
+.banner-section{
+	padding-top: 38px;
+	position: relative;
+    background-color: #f7f7f7;
+    font-family: Myriad Pro;
+    height: auto;
+}
+
+.banner-section .main-container .banner-desc{
+	color: #42494f;
+	font-size: 30px;
+}
+.banner-section .main-container .banner-sub-title{
+	color: #42494f;
+	font-size: 44px;
+	margin-bottom: 0px;
+}
+.banner-section .main-container .banner-title{
+	color: #42494f;
+	font-size: 45px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.banner-section .main-container .banner-sub-title .big-data{
+	color: #f69011;
+}
+.banner-section .btn-get_start{
+    position: absolute;
+    max-width: 243px;
+    min-height: 65px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 239px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 65px;
+    background-color: #ffa12d;
+    border-radius: 3px;
+    z-index: 500;
+}
+.banner-section .btn-get_start a{
+	text-decoration: none;
+	font-family: Myriad Pro;
+	color: #fff;
+	font-size: 24px;
+
+}
+/*---------------------------------------------------flex-zone------------------------------------------------------*/
+.flex-zone{
+	position: relative;
+	height: 432px;
+}
+.flex-zone.clearfix {
+  	overflow: visible;
+}
+.container-right{
+	float: right;
+}
+.container-left{
+	float: left;
+}
+.flex-zone .main-container .crane{
+    margin-top: -25px;
+    padding-right: 35px;
+}
+.flex-zone .main-container .flex-zone-title{
+	display: block;
+    margin-top: 50px;
+    /* margin-left: 54px; */
+    max-width: 518px;
+    padding-right: -34px;
+    font-family: Myriad Pro;
+    font-size: 40px;
+    color: #42494f;
+    word-break: break-all;
+    text-align: left;
+
+}
+.flex-zone .main-container .flex-feature{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: Myriad Pro;
+    font-size: 20px;
+    color: #42494f;
+    /*max-width: 414px;*/
+}
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #276d83;
+    border-bottom: 10px solid transparent;
+    /* border-right: 22px solid black; */
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 23px;
+}
+.triangle-left:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+    /* border-right: 18px solid #fff; */
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    vertical-align: middle;
+    text-align: center;
+}
+.flex-feature-data{
+	display: inline-block;
+	width: 85%;
+    vertical-align: middle;
+    line-height: auto;
+}
+/*----------------------------------------------------------video section -----------------------------------------------*/
+.video-section .tim-qoute{
+    color: #fff;
+    padding-top: 94px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: Myriad Pro;
+    font-size: 24px;
+}
+.video-container{
+    width: 897px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facbook-cio{
+    margin-top: 23px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+.video-container .facbook-cio span{
+        margin-left: 17px;
+    color: #fff;
+    font-family: Myriad Pro;
+    font-size: 21px;
+    text-align: center;
+    vertical-align: middle;
+}
+.video_anchor{
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 21px;
+    font-family: Myriad Pro;
+}
+
+.video_anchor .play_video{
+   text-decoration: none;
+    padding: 4px 12px;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 50px;
+    border:solid 2px #fff;
+    color: #fff;
+}
+.video_anchor .play_video:before{
+    color: #fff;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+}
+.video_anchor .play_video:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid transparent;
+    /* border-right: 18px solid #fff; */
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    vertical-align: middle;
+    text-align: center;
+}

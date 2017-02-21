@@ -1,13 +1,50 @@
 {% extends "layouts/default.html" %}
 
 {% block content %}
-<section>
-    <h1>{{entry.title}}</h1>
-    
-			<ul>
-			<li><b>Title:</b> {{entry.title}}</li>
-			<li><b>URL:</b> {{entry.url}}</li>
-			</ul>
-    <p style="color: #555; font-size: 14px">Note: Template automatically generated at "C:\Users\Vinayak Phutane\pronq-project\themes\basic\templates\pages\marketing\index.html"</p>
-</section>
+		<section class="banner-section">
+			<div class="main-container">
+					<h1 class="banner-title"> {{ entry.banner.banner_title }} </h1>
+					<p class="banner-sub-title"> {{ entry.banner.sub_title }} </p>
+					<p class="banner-desc"> {{entry.banner.descption }} </p>
+			</div>
+			<div class="banner-bg">
+					<div class="btn-get_start">
+						<a href="#"> {{ entry.banner.btn_start_now }} </a>
+					</div>	
+			</div>
+		</section>
+		<section class="flex-zone clearfix">
+			<div class="main-container clearfix">
+				<div class="container-left">
+					<p class="flex-zone-title"> {{ entry.flex_zone.title }} </p>
+					{% for data in entry.flex_zone.flex_feature %}
+					<div class="flex-feature">
+						<div class="triangle-left"></div>
+						<span class="flex-feature-data">{{ data }} </span>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="container-right">
+					<img class="crane" src="{{ getAssetUrl(entry.flex_zone.crane_img )}}">
+				</div>
+			</div>
+		</section>
+		<section class="video-section">
+			<div class="video-container">
+				<p class="tim-qoute"> {{ entry.video_section.multi_line }} </p>
+		
+				<div class="facbook-cio">
+					<img src="{{ getAssetUrl( entry.video_section.facebook_logo) }}" alt="no_preview">
+					<span> {{ entry.video_section.author }} </span>
+				</div>
+				<div class="video_anchor">
+					<span> {{ entry.video_section.video_link }} </span>
+					<a href="#" class="play_video"></a>
+				</div>
+			</div>
+		</section>
+			
+		</section>
+		<section class="partner-feedback">
+		</section>	
 {% endblock %}

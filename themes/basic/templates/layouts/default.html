@@ -5,11 +5,12 @@
     <link type="text/css" rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style3.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-{% set url = entry.url %}
-{% if url == "/fortifyondemand" %}
+ {% set url = entry.url %}
+ {% if url == "/fortifyondemand" %}
     <style type="text/css">
     	body{
 			font-family: Myriad Pro;
@@ -119,8 +120,8 @@
 			background-size: cover;
 		}
 	</style>
-{% endif %}
-{% if url == "/agilemanager" %}
+ {% endif %}
+ {% if url == "/agilemanager" %}
 	<style type="text/css">
 			.navbar {
 				min-height: 0px;
@@ -198,8 +199,8 @@
 				background-size: cover;
 			}
 	</style>
-{% endif %}
-{% if url == "/pronq" %}
+ {% endif %}
+ {% if url == "/pronq" %}
 		<style type="text/css">
 			body{
 				text-align: center;
@@ -282,7 +283,44 @@
 				overflow: hidden;
 			}
 		</style>
-{% endif %}
+ {% endif %}
+ {% if url == "/marketing" %}
+		<style type="text/css">
+			body{
+				text-align: center;
+				vertical-align: middle;
+			}
+			.main-container .banner-section h1{
+				margin-top: 0px;
+			}
+			p{
+				margin-bottom: 5px;
+			}
+			section{
+			}
+			.navbar{
+				min-height: 0px
+			}
+			.navbar-inverse{
+				margin-bottom: 0px;
+			}
+			.navbar {
+			     border-radius: 0px; 
+			}
+			.banner-bg {
+			    background: url("{{getAssetUrl(entry.banner.backgorund)}}") 0 0 no-repeat;
+			    background-size: cover;
+			    height: 352px;
+			/* */    width: 100%;
+			    bottom: 0;z-index: 1;
+			}
+			.video-section{
+				background: url("{{ getAssetUrl(entry.video_section.backgorund_img )}}")0 0 no-repeat;
+				height: 572px;
+				background-size: cover;
+			}
+		</style>
+ {% endif %}
 </head>
 <body>
 <div class="cantainer-fluid">
