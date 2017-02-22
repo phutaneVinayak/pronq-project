@@ -48,8 +48,98 @@
 				</video>
 			</div>
 		</section>
-			
-		</section>
 		<section class="partner-feedback">
-		</section>	
+			<div class="section-title-desc container">
+				<span> {{ entry.partner_feedback.title }} </span>
+				<span> {{ entry.partner_feedback.sub_title }} </span>
+				<p> {{ entry.partner_feedback.desc }} </p>
+			</div>
+			<div class="partner-logos container">
+				{% for data in entry.partner_feedback.partner_icon %}
+				<img class="col-md-4" src="{{getAssetUrl(data)}}">
+				{% endfor %}
+			</div>
+			<div class="media">
+			  <div class="tringle"></div>
+			  	<div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="{{getAssetUrl(entry.partner_feedback.quote_logo)}}" alt="...">
+			    </a>
+			  	</div>
+		   		{{ entry.partner_feedback.feedback }} 
+			</div>
+			<div class="get_start_now">
+				<a  href="javascript(void(0))"> {{ entry.partner_feedback.link_start }} </a>
+			</div>
+		</section>
+		<section class="data-driven">
+			<div class="section_title_desc container">
+				<span class="title"> {{ entry.data_driven.title }} </span>
+				<span class="sub_title"> {{ entry.data_driven.sub_title }} </span>
+				<span class="desc"> {{ entry.data_driven.desc }} </span>
+			</div>
+			<div class="features">
+				{% for data in entry.data_driven.features %}
+				<div class="features_img">
+					<img src="{{getAssetUrl(data.feature_img)}}">
+					<div class="overlay">{{ data.feature_title }}</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="learn_more">
+				<a  href="javascript(void(0))"> {{ entry.data_driven.learn_more }} </a>
+			</div>
+		</section>
+		<section class="media_section">
+			<div class="wrapper">
+				<span> {{entry.media_section.title}} </span>
+				<div class="clearfix">
+					{% for data in entry.media_section.media_review %}
+						{% if loop.index % 2 == 1 %}
+							<div class="media_review">
+								<div class="review">
+									<p> {{ data.review }} </p>
+									<span></span>
+								</div>
+								<div class="media_logo">
+									<img src="{{getAssetUrl(data.media_logo)}}">
+								</div>
+							</div>
+						{% else %}
+							<div class="media_review">
+								<div class="media_logo">
+									<img src="{{getAssetUrl(data.media_logo)}}">
+								</div>
+								<div class="review">
+									<p> {{ data.review }} </p>
+									<span></span>
+								</div>
+							</div>
+						{% endif %}
+
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+		<section class="use_step_section">
+			<div class="container">
+				<span class="section_title"> {{ entry.steps_section.title }} </span>
+				<div class="steps_wrapper">
+					{% for data in entry.steps_section.steps %}
+						<div class="steps">
+							<div class="steps_icon">
+								<img src="{{ getAssetUrl(data.step_icon) }}">
+							</div>
+							<span> {{ data.step_desc }} </span>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="sub_title">
+					<span> {{ entry.steps_section.sub_title }} </span>
+				</div>
+				<div class="link_get_start_now">
+					<a href="javascript(void(0))"> {{ entry.steps_section.link_get_start_now }} </a>
+				</div>
+			</div>
+		</section>
 {% endblock %}

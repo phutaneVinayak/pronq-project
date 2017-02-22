@@ -119,6 +119,9 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		.logo{
+			float: left;
+		}
 	</style>
  {% endif %}
  {% if url == "/agilemanager" %}
@@ -321,6 +324,59 @@
 				margin-top: -25px;
 				padding-top: 5px;
 			    padding-bottom: 9px;
+			}
+			.media{
+			    overflow: visible;
+			    padding: 26px;
+			    margin-top: 5px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-bottom: 50px;
+			    left: 0;
+			    right: 0;
+			    width: 920px;
+			    display: block;
+			    /*position: absolute*/;
+		      	border: solid 1px #12a9b2;
+			    border-radius: 2px;
+			    box-shadow: 0px 5px 9px 0px #c4c4c4;
+			}
+			.media-left {
+			    display: table-cell;
+			    vertical-align: top;
+			    border-right: solid 1px #d6dbe1;
+			    /* text-align: center; */
+			    vertical-align: middle;
+			    margin-right: 26px;
+			    padding-right: 26px;
+			}
+			.media-body{
+				text-align: left;
+				font-family: Myriad Pro;
+				font-size: 18px;
+				color: #42494f;
+				border: none;
+				margin-left: 25px;
+			}
+			.media-body p{
+				/* margin-top: 15px; */
+				display: block;
+				/* margin-right: 25px; */
+				margin-left: 25px;
+			}
+			.media-body span{
+				display: block;
+				margin-left: 30px;
+			}
+			.media_section{
+				background: url("{{getAssetUrl(entry.media_section.background )}}");
+				background-size: cover; 
+			    height: 664px;
+			}
+			.testFire{
+				width: 1140px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		</style>
  {% endif %}
