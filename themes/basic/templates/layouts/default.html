@@ -6,9 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style3.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
  {% set url = entry.url %}
  {% if url == "/fortifyondemand" %}
     <style type="text/css">
@@ -126,6 +128,9 @@
  {% endif %}
  {% if url == "/agilemanager" %}
 	<style type="text/css">
+		.cantainer-fluid{
+			background-color: #f7f7f7;
+		}
 			.navbar {
 				min-height: 0px;
 				margin-bottom: 0px;
@@ -378,6 +383,19 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			.use_step_section .container .steps_wrapper:before {
+			    position: absolute;
+			    content: "";
+			    height: 3px;
+			    width: 60%;
+			    top: 50%;
+			    background-image: url("{{getAssetUrl(entry.steps_section.bar_img)}}");
+			    background-repeat: repeat-x;
+			}
+			footer {
+				background-color: #1f2227;
+				overflow: hidden;
+			}
 		</style>
  {% endif %}
 </head>
@@ -386,6 +404,7 @@
 	{% include "partials/header.html" %}
 
     {% block content %}{% endblock %}
+    {% block cssblock %} {% endblock %}
 
     {% include "partials/footer.html" %}
 </div>

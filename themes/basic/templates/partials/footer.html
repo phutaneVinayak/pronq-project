@@ -67,3 +67,23 @@
 	</div>
 </footer>
 {% endif %}
+{% if url == "/marketing" %}
+<footer>
+	<div class="footer_wrapper clearfix">
+		<div class="bar"></div>
+		<div class="social_site">
+		{% for data in entry.footer.social_media %}
+			<a href="javascript(void(0))"> <img class="_social" src="{{getAssetUrl(data)}}"> </a>
+		{% endfor %}
+		</div>
+		<div class="test1">
+			<a href="javascript(void(0))"> Privacy Policy   </a> &nbsp; | &nbsp;
+			<a href="javascript(void(0))"> Terms and Conditions </a>
+		</div>
+		<div class="copyrights_pronq">
+			<img class="cpi" src="{{getAssetUrl(entry.footer.pronq_icon)}}">
+			<p class="HP">© 2014 Pronq by HP</p>
+		</div>
+	</div>
+</footer>
+{% endif %}

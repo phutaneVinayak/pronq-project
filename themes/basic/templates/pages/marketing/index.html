@@ -77,12 +77,17 @@
 				<span class="title"> {{ entry.data_driven.title }} </span>
 				<span class="sub_title"> {{ entry.data_driven.sub_title }} </span>
 				<span class="desc"> {{ entry.data_driven.desc }} </span>
-			</div>
+			</div>	
 			<div class="features">
 				{% for data in entry.data_driven.features %}
-				<div class="features_img">
-					<img src="{{getAssetUrl(data.feature_img)}}">
-					<div class="overlay">{{ data.feature_title }}</div>
+				<div class="features_img .features_img_{{loop.index}}">
+					<img class="imgClass" src="{{getAssetUrl(data.feature_img)}}">
+					<div class="overlay" style="background-image: url({{ getAssetUrl(data.overlay_img)}}); background-size: 0 0;">
+						<div class="delta">
+							<span class="_title_"> {{ data.feature_title }} </span>
+							<p> {{ data.desc }} </p>
+						</div>
+					</div>
 				</div>
 				{% endfor %}
 			</div>
@@ -97,22 +102,22 @@
 					{% for data in entry.media_section.media_review %}
 						{% if loop.index % 2 == 1 %}
 							<div class="media_review">
-								<div class="review">
+								<div class="review" id="box{{loop.index}}" style="float: left;">
 									<p> {{ data.review }} </p>
-									<span></span>
+									<span> {{ data.media_name }}</span>
 								</div>
-								<div class="media_logo">
+								<div class="media_logo" id="circle{{loop.index}}" style="    margin-left: 10px;">
 									<img src="{{getAssetUrl(data.media_logo)}}">
 								</div>
 							</div>
 						{% else %}
 							<div class="media_review">
-								<div class="media_logo">
+								<div class="media_logo" id="circle{{ loop.index }}" style="margin-right: 10px;">
 									<img src="{{getAssetUrl(data.media_logo)}}">
 								</div>
-								<div class="review">
+								<div class="review" id="box{{loop.index}}" style="float: right;">
 									<p> {{ data.review }} </p>
-									<span></span>
+									<span> {{ data.media_name }}</span>
 								</div>
 							</div>
 						{% endif %}
@@ -142,4 +147,30 @@
 				</div>
 			</div>
 		</section>
+<script type="text/javascript">
+		var overlay;
+		var parent;
+		var imgClass;
+		var src;
+	$('.features_img').mouseover(function(){
+		console.log("got it ");	
+		overlay = $(this).find('.overlay');
+		console.log(overlay);
+		imgClass = overlay.parent().find('.imgClass');
+		console.log(imgClass);
+		src = overlay.parent().find('.imgClass').attr('src');
+		
+		console.log(src);
+		overlay.css('padding-left','0px');
+		overlay.addClass('animated').addClass('slideInUp').addClass('overlay_1');
+		imgClass.css("visibility","hidden");
+	}).mouseout(function(){
+		imgClass.css('visibility','visible');
+
+		overlay.css('height','55px');
+		overlay.removeClass('animated').removeClass('slideInUp').removeClass('overlay_1');
+		overlay.css('padding-left','44px');
+		
+	});
+</script> 
 {% endblock %}
