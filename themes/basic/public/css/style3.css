@@ -284,8 +284,7 @@ ul,li{
     padding-left: 50px;
 }
 .partner-feedback .tringle{
-
-        left: 391px;
+    left: 391px;
     /* margin-left: -64px; */
     margin-top: -41px;
     background-color: #fff;
@@ -375,7 +374,7 @@ ul,li{
     font-family: Myriad Pro;
     font-size: 24px;
     text-align: left;
-    padding-left: 44px;
+    /*padding-left: 44px;*/
     vertical-align: middle;
     line-height: 55px;
     background-size: 0 0;
@@ -391,7 +390,7 @@ ul,li{
     background-size: 100% 100% !important; 
 }
 .delta{
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 10px;
     background-color: #1f373c;
     height: 100%;

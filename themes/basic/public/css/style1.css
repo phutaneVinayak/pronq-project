@@ -233,6 +233,12 @@ ul,li{
     background-color: #f69011;
     border-radius: 5px;
 }
+.contact_sales .contact_sales_btn a{
+	text-decoration: none;
+	color: #fff;
+    font-family: Myriad Pro;
+    font-size: 18px;
+}
 /*------------------------------------------------------------last_container-----------------------------------------------------------*/
 .last_container1 .access_to_hp{
 	clear: both;
@@ -273,6 +279,10 @@ ul,li{
 	opacity: 0.5;
 	margin-right: 15px;
 }
+.last_container1 .access_to_hp .pronq_warpper .community a{
+	text-decoration: none;
+	color: #fff;
+}
 .last_container1 .access_to_hp .pronq_warpper .learn{
 	display: inline-block;
 	padding-top: 14px;
@@ -285,6 +295,10 @@ ul,li{
 	border-radius: 4px;
 	background-color: #548c9d;
 	opacity: 0.5;
+}
+.last_container1 .access_to_hp .pronq_warpper .learn a{
+	text-decoration: none;
+	color: #fff;
 }
 /*---------------------------------------------------------FOOTER -------------------------------------------------------------*/
 .footer_container{

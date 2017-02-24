@@ -56,11 +56,11 @@
 			</div>
 			<div class="partner-logos container">
 				{% for data in entry.partner_feedback.partner_icon %}
-				<img class="col-md-4" src="{{getAssetUrl(data)}}">
+				<img class="col-md-4 partner_icon" id="partner_img_{{loop.index}}" src="{{getAssetUrl(data)}}">
 				{% endfor %}
 			</div>
 			<div class="media">
-			  <div class="tringle"></div>
+			  <div class="tringle backup"></div>
 			  	<div class="media-left">
 			    <a href="#">
 			      <img class="media-object" src="{{getAssetUrl(entry.partner_feedback.quote_logo)}}" alt="...">
@@ -161,15 +161,14 @@
 		src = overlay.parent().find('.imgClass').attr('src');
 		
 		console.log(src);
-		overlay.css('padding-left','0px');
+		/*overlay.css('padding-left','0px');*/
 		overlay.addClass('animated').addClass('slideInUp').addClass('overlay_1');
 		imgClass.css("visibility","hidden");
 	}).mouseout(function(){
 		imgClass.css('visibility','visible');
-
 		overlay.css('height','55px');
 		overlay.removeClass('animated').removeClass('slideInUp').removeClass('overlay_1');
-		overlay.css('padding-left','44px');
+		/*overlay.css('padding-left','44px');*/
 		
 	});
 </script> 

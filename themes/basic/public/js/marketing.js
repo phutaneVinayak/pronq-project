@@ -40,15 +40,23 @@ $(document).ready(function(){
 		element.removeClass('animated').removeClass('slideInLeft').removeClass('slideInRight');
 		element.css("visibility","hidden");
 	})
-/*	var overlay;
-	$('.features_img').mouseover(function(){
-		console.log("got it ");	
-		overlay = $(this).find('.overlay');
-		console.log(overlay);
-		overlay.addClass('animated').addClass('slideInUp');
-		overlay.css("height","100%");
+
+/*	var hover_img;
+	$('.partner_icon').mouseover(function(){
+		hover_img = $(this).attr('id');
+		 if (hover_img == 'partner_img_2') {
+			$('.media').find('.tringle').addClass('tringle2').removeClass('.tringle');
+		}
+		else if (hover_img == 'partner_img_3') {
+			$('.media').find('.tringle').addClass('tringle3').removeClass('.tringle');
+		}
+		else if (hover_img == 'partner_img_4') {
+			$('.media').find('.tringle').addClass('tringle4').removeClass('.tringle');
+		}
+		else{
+			console.log("error in hover_img");
+		}
 	}).mouseout(function(){
-		overlay.css('height','55px');
-		overlay.removeClass('animated').removeClass('slideInUp');
+		$('.media').find('.tringle2').addClass('tringle').removeClass('.tringle2');
 	});*/
 })
